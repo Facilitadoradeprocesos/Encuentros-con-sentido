@@ -1,0 +1,125 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d4e6c3; /* Verde tenue */
+    color: white;
+    text-align: center;
+    font-family: "Source Sans 3";
+    height: 100%;
+}
+
+/* Header */
+header {
+    background-color: #a991d4; /* Morado suave */
+    padding: 0;
+    font-size: 28px;
+    
+}
+
+/* Sección Hero */
+.hero {
+    background-image: url("Foto\ talleres\ corporativos2.jpg"); 
+
+    height: 100vh;
+    display:flex;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: #a991d4; /* Morado suave */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #8a75b0; /* Morado más oscuro */
+}
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+
+
+}
+
+/* Sección de Ofrecemos */
+.ofrecemos {
+    background-color: #a991d4; /* Morado suave */
+    padding: 40px;
+    
+}
+.ofrecemos h2 {
+ font-size: 2.5rem;
+ margin-bottom: 5px;
+}
+
+
+.cajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.caja {
+    background-color: #d4e6c3; /* Verde tenue */
+    color: black;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Sección de Razones */
+.razones {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 1px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.razones li {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+/* Sección Sobre Mí */
+.sobre-mi {
+    background-color: #a67c52; /* Color tierra */
+    padding: 40px;
+}
+.sobre-mi h2 {
+ font-size: 2.5rem;
+}
+.sobre-mi p {
+font-size: 1.5rem;
+}
+/* Footer */
+footer {
+    background-color: #a991d4; /* Morado suave */
+    padding: 15px;
+    font-size: 14px;
+}
