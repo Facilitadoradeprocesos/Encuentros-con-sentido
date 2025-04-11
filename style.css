@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d4e6c3; /* Verde tenue */
+    background-color: #f8f1e9; /* Verde tenue */
     color: white;
     text-align: center;
     font-family: "Source Sans 3";
@@ -13,10 +13,13 @@ body {
 
 /* Header */
 header {
-    background-color: #a991d4; /* Morado suave */
+    background-color: #f8f1e9; /* Morado suave */
     padding: 0;
     font-size: 28px;
     
+}
+header h1 {
+    color: black;
 }
 
 /* Sección Hero */
@@ -38,7 +41,7 @@ header {
 
 .btn {
     background-color: #a991d4; /* Morado suave */
-    color: white;
+    color: #f8f1e9;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -53,19 +56,21 @@ header {
     font-size: 3rem;
     font-weight: 700;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    color:#f8f1e9
 
 
 }
 
 /* Sección de Ofrecemos */
 .ofrecemos {
-    background-color: #a991d4; /* Morado suave */
+    background-color: #f8f1e9; /* Morado suave */
     padding: 40px;
     
 }
 .ofrecemos h2 {
  font-size: 2.5rem;
  margin-bottom: 5px;
+ color: Black;
 }
 
 
@@ -94,32 +99,56 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: right;
+    text-align: left;
     gap: 1px;
     margin-top: 0;
     padding-top: 0;
+    color: black;
+    transform: translate(20px);
 }
 
 .razones li {
 display: flex;
 align-items: center;
 gap: 8px;
+justify-content: center;
+margin: 8px 0;
 }
 
 /* Sección Sobre Mí */
 .sobre-mi {
-    background-color: #a67c52; /* Color tierra */
-    padding: 40px;
+    background-color: #8a75b0; /* Color morado suave */
+    padding: 40px 20px; 
+    margin: 0 auto;
+    max-width: 900px;
 }
 .sobre-mi h2 {
  font-size: 2.5rem;
+ text-align: center;
+ margin-bottom: 30px;
 }
-.sobre-mi p {
-font-size: 1.5rem;
+
+.contenido {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.contenido img {
+    width: 250px;
+    border-radius: 150px;
+    object-fit: cover;
+}
+.contenido p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
 }
 /* Footer */
 footer {
-    background-color: #a991d4; /* Morado suave */
+    background-color: #f8f1e9; /* crema */
     padding: 15px;
     font-size: 14px;
+    color: black;
 }
