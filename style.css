@@ -12,11 +12,28 @@ body {
 }
 
 /* Header */
-header {
+.encabezado {
     background-color: #f8f1e9; /* Morado suave */
-    padding: 0;
-    font-size: 28px;
+    padding: 20px;
+    display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+gap: 20px;
+
     
+}
+.logo {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+}
+.titulo {
+    margin: 0%;
+    text-align: center;
+    width: 100%;
+    font-size: 70px;
 }
 header h1 {
     color: black;
