@@ -180,3 +180,82 @@ footer {
     font-size: 14px;
     color: black;
 }
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .cajas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja {
+        width: 90%;
+    }
+
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenido img {
+        width: 200px;
+        margin-bottom: 15px;
+    }
+
+    .contenido p {
+        text-align: justify;
+    }
+
+    .sobre-mi {
+        height: auto;
+        padding: 20px;
+    }
+
+    .razones {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .contenido img {
+        width: 160px;
+    }
+}
