@@ -59,6 +59,22 @@
         </ul>
     </section>
 
+    <section class="contacto">
+        <h2>¡Llevemos juntos este propósito más lejos! <br> Contáctanos</h2> 
+
+        <form action="https://formspree.io/f/movdqeoe" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="text" name="empresa" placeholder="Nombre de la empresa" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+        
+            <input type="hidden" name="_next" value="gracias.html">
+            <input type="hidden" name="_replyto" value="">
+        
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+
     <!-- Sobre Mí -->
     <section class="sobre-mi">
         <h2>Sobre mí</h2>
@@ -66,25 +82,49 @@
             <img src="Elsa1.jpg" alt="fundadora">
         
         <p>Soy Elsa Valiente creadora de Encuentros con Sentido, he trabajado con diversas ongs y empresas acompañando a las personas en temas de bienestar y desarrollo humano.  
-            <br>Creo profundamente en el poder del empoderamiento personal y en la importancia de alinear nuestros planes de vida con un propósito que nos inspire de verdad. </p>
+            <br>Creo profundamente en el poder del empoderamiento personal y en la importancia de alinear nuestros planes de vida con un propósito que realmente nos impulse. </p>
         </div>
         </section>
-        <section class="contacto">
-            <h2>Contáctanos</h2>
-            <form action="https://formsubmit.co/contacto@conexionproposito.com" method="POST">
-              <input type="text" name="nombre" placeholder="Nombre completo" required>
-              <input type="text" name="empresa" placeholder="Nombre de la empresa" required>
-              <input type="email" name="email" placeholder="Correo electrónico" required>
-              <textarea name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
-              <input type="hidden" name="_replyto" value="">
-              <button type="submit">Enviar</button>
-            </form>
-          </section>
+       
+          
           
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Encuentros con Sentido. Todos los derechos reservados.</p>
+        <p><a href="Aviso-privacidad.html" target="_blank">Aviso de privacidad</a></p>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.querySelector("form");
+      
+          form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Evita que el formulario se envíe normalmente
+      
+            const formData = new FormData(form);
+      
+            fetch(form.action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            })
+            .then(response => {
+              if (response.ok) {
+                form.reset(); // Limpia los campos
+                window.location.href = "gracias.html"; // Redirige a tu página de agradecimiento
+              } else {
+                alert("Hubo un problema al enviar el formulario. Intenta nuevamente.");
+              }
+            })
+            .catch(error => {
+              alert("Error al enviar. Inténtalo más tarde.");
+              console.error("Error:", error);
+            });
+          });
+        });
+      </script>
+      
 </body>
 </html>

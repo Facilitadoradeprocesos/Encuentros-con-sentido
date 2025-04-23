@@ -126,6 +126,7 @@ header h1 {
     padding-top: 0;
     color: black;
     transform: translate(20px);
+    margin-bottom: 0;
 }
 
 .razones li {
@@ -179,7 +180,20 @@ footer {
     padding: 15px;
     font-size: 14px;
     color: black;
+    text-align: center;
 }
+
+footer a {
+    color: #8a75b0; /* Color similar al de tu diseño */
+    font-size: 14px;
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    color: #a991d4; /* Cambia el color al pasar el ratón */
+    text-decoration: underline; /* Agrega subrayado al pasar el ratón */
+}
+
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
     .encabezado {
@@ -259,3 +273,59 @@ footer {
         width: 160px;
     }
 }
+/* Sección de Contacto */
+.contacto {
+    background-color: #d4e6c3;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Arial', sans-serif;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .contacto h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contacto input,
+  .contacto textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contacto input:focus,
+  .contacto textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .contacto button {
+    background-color: #8a75b0;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contacto button:hover {
+    background-color: #45a049;
+  }
+  
